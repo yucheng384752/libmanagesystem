@@ -1,0 +1,94 @@
+/* user_home.css */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #91B493;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 3vh;
+    font-size: 48px;
+    border-bottom: 2px solid black;
+    padding: 5px;
+}
+
+p {
+    margin: 2vh 2vh 2vh 0;
+    font-size: 24px;
+}
+
+
+h2 {
+    font-size: 36px;
+    margin-top: 2vh;
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+}
+
+.record {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+li form {
+    text-align: center;
+    display: inline;
+}
+
+button {
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #FBE251;
+    color: #898989;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px solid black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #FBE251;
+    color: #898989;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

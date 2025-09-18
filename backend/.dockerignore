@@ -1,0 +1,37 @@
+# 忽略 Git 相關檔案和目錄
+.git
+.gitignore
+
+# 忽略 Python 相關的編譯快取和虛擬環境
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+env/
+.env/
+
+# 忽略 Django 預設的 SQLite 資料庫檔案
+db.sqlite3
+*.sqlite3
+
+# 忽略媒體檔案和靜態檔案的收集目錄 (如果在開發環境下不希望打包，或是在部署時由 volume 掛載)
+# 如果你在生產環境中需要將靜態文件打包到映像中，則不應該忽略 collected_static/
+# media/
+# staticfiles/
+
+# 忽略日誌檔案
+*.log
+logs/
+
+# 忽略編輯器/IDE 相關檔案和目錄
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# 忽略 Dockerfile 本身 (雖然 Docker 會自動忽略，但明確寫出更清晰)
+Dockerfile
+docker-compose.yml
