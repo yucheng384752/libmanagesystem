@@ -1,0 +1,35 @@
+<<<<<<< HEAD
+# Python
+*.pyc
+__pycache__/
+*.so
+.Python
+.venv/
+venv/
+env/
+build/
+develop-eggs/
+.installed.cfg
+*.egg-info/
+.coverage
+.pytest_cache/
+.tox/
+.mypy_cache/
+
+# Django
+*.log
+*.sqlite3
+media/
+
+
+# Frontend (React)
+/frontend/node_modules/
+/frontend/build/   # React 的打包輸出
+.env.local
+.DS_Store
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+=======
+test.py
+>>>>>>> 093628658222a869a25043212bbe0e18c699fd86

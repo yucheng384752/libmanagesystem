@@ -1,0 +1,28 @@
+services:
+  django_web:
+    restart: always
+    build: 
+      context: ./backend  
+      dockerfile: Dockerfile
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000" 
+    volumes:
+      - ./backend/db.sqlite3:/app/db.sqlite3
+    ports:
+      - "8000:8000" # "內部port:外部port"
+  # react-app:
+  #   restart: always
+  #   build: 
+  #     context: ./frontend
+  #     dockerfile: Dockerfile
+    # volumes:
+    #   - ./frontend:/app 
+    # ports:
+    # - "3000:80"
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx-docker/dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - django_web
